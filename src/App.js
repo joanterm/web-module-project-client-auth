@@ -4,17 +4,17 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect} from 'react-rou
 import Login from "./Components/Login"
 import AddFriend from "./Components/AddFriend"
 import FriendList from "./Components/FriendList"
+import Logout from "./Components/Logout"
 
 function App() {
   return (
     <div className="App">
       <Router>
         <h2>Client Auth Project</h2>
-        <Link to="/">Login</Link>
         <Link to="/login">Login</Link>
         <Link to="/friendlist">FriendList</Link>
         <Link to="/add/friend">Add Friend</Link>
-        <Link to="/friendlist">Logout</Link>
+        <Link to="/logout">Logout</Link>
         <Switch>
           <Route exact path="/">
             <Login/>
@@ -27,6 +27,9 @@ function App() {
             </Route>
           <Route path="/add/friend">
             <AddFriend/>
+          </Route>
+          <Route path="/logout">
+            <Logout/>
           </Route>
         </Switch>
       </Router>

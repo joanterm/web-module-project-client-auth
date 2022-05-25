@@ -60,13 +60,5 @@ const Login = () => {
  
 export default Login;
 
-// {
-//     id: 1
-//     name: 'Joe',
-//     age: 24,
-//     email: 'joe@lambdaschool.com',
-//   }
-
-// [POST] * to /api/login: returns a token to be added to the header of all other requests. 
-//Pass in the following credentials as the body of the request: 
+//CREDENTIALS:
 //{ username: 'Bloom', password: 'Tech' }
